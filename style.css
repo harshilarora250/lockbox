@@ -1,3 +1,8 @@
+::selection {
+    background-color: #993CCF;
+    color: #FFA937;
+}
+
 body {
     background-color: #383636;
 }
@@ -31,4 +36,29 @@ hr {
   font-weight: 400;
   font-style: normal;
   margin-left: 50px;
+}
+
+.passmodal {
+    /* Your exact styles */
+  background-color: #F55F44;
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.2);
+
+  /* The centering magic */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.passtitle {
+    font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-family: 35px;
 }
