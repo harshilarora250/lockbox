@@ -64,5 +64,23 @@ hr {
 }
 
 .login-input{
-  margin-left: 20px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.savepass {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.input-what {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
