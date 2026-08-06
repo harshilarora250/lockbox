@@ -1,5 +1,7 @@
 # LockBox
-LockBox is a web password manager, save passwords. Play a fun little mystery game!
+LockBox is a web password manager, save passwords. Play a fun little embedded mystery game! (that I did not make btw)
+
+
 
 ## Tech Stack
 ```
