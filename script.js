@@ -5,6 +5,7 @@ const passmodal = document.getElementById("passmodal")
 const username = document.getElementById("username")
 const password = document.getElementById("password")
 const saveuser = document.getElementById("savepass")
+const itsaved = document.getElementById("itsaved")
 
 //Lead title text to github repo
 titlegit.addEventListener("click", (e) => {
@@ -18,7 +19,10 @@ newpass.addEventListener("click", (e) => {
 })
 
 saveuser.addEventListener("click", () => {
-    const accounts = JSON.parse(localStorage.getItem("accounts")) || [];
+    if (password.value === "") {
+        alert("please set a password")
+    } else {
+            const accounts = JSON.parse(localStorage.getItem("accounts")) || [];
 
     accounts.push({
         username: username.value,
@@ -29,7 +33,13 @@ saveuser.addEventListener("click", () => {
     localStorage.setItem("accounts", JSON.stringify(accounts));
 
     console.log("Saved!");
-    location.reload();
+    itsaved.hidden = false;
+    passmodal.hidden = true;
+    setTimeout(() => {
+        itsaved.hidden = true;
+        location.reload();
+    }, 5000);
+}
 });
 
 // Create password

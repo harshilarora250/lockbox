@@ -84,3 +84,8 @@ hr {
   justify-content: center;
   align-items: center;
 }
+
+.saved {
+  text-align: center;
+  color: green;
+}
