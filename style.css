@@ -62,3 +62,7 @@ hr {
   text-align: center;
   font-family: 35px;
 }
+
+.login-input{
+  margin-left: 20px;
+}
