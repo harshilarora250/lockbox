@@ -7,7 +7,7 @@ LockBox is a web password manager, save passwords. Play a fun little embedded my
 ## How to use
 The project is pretty self explanitory, if you can't understand for some reason you can watch the demo video
 
-<a href="demo/demo.mov">Here</a>
+<a href="demo/demo.mov">Here</a>. You can only watch on mac or you have to manually convert it.
 
 ## File Structure
 <img src="assets/filestructure.png" height="250px">
