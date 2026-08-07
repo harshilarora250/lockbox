@@ -3,40 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>LockBox - Password Manager</title>
+
     <link rel="stylesheet" href="src/css/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
 </head>
+
 <body>
-    <h1 id="title-git" class="title" target="_blank">LockBox</h1>
+
+    <h1 id="title-git" class="title">LockBox</h1>
+
     <hr>
+
     <br>
-    <h3 class="saved" id="itsaved" hidden>Saving... Reloading once saved...</h3>
+
+    <h3 class="saved" id="itsaved" hidden>
+        Saving... Reloading once saved...
+    </h3>
+
     <button id="create-pass" class="newpass">+</button>
+
     <form class="passmodal" id="passmodal" hidden>
+
         <h1 class="passtitle">Create a password</h1>
-        <input id="username" class="login-input" type="text">
+
+        <input
+            id="username"
+            class="login-input"
+            type="text"
+            placeholder="Username"
+        >
+
         <br>
+
         <p class="input-what">Enter a username</p>
+
         <br>
         <br>
-        <input id="password" class="login-input" type="text">
+
+        <input
+            id="password"
+            class="login-input"
+            type="text"
+            placeholder="Password"
+        >
+
         <br>
-        <p class="input-what">Enter a passsord</p>
+
+        <p class="input-what">Enter a password</p>
+
         <br>
         <br>
-        <button id="savepass" class="savepass">Save</button>
+
+        <button id="savepass" class="savepass" type="button">
+            Save
+        </button>
+
     </form>
+
     <div id="savedpass" class="passwords">
+
         <h2 id="nopass"></h2>
+
+        <!-- Password cards will be added here -->
+
     </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
-<script src="src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+    <script src="src/js/script.js"></script>
+
 </body>
 </html>

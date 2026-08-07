@@ -1,71 +1,136 @@
 const { animate, hover, scroll } = Motion;
-const titlegit = document.getElementById("title-git") // Lead title text to github repo
-const newpass = document.getElementById("create-pass")
-const passmodal = document.getElementById("passmodal")
-const username = document.getElementById("username")
-const password = document.getElementById("password")
-const saveuser = document.getElementById("savepass")
-const itsaved = document.getElementById("itsaved")
-const nopass = document.getElementById("nopass")
 
-//Lead title text to github repo
-titlegit.addEventListener("click", (e) => {
-    window.open("https://github.com/harshilarora250/lockbox/", "_blank");
-})
-// Lead title text to github repo
 
-// Create password
-newpass.addEventListener("click", (e) => {
+// ================================
+// ELEMENTS
+// ================================
+
+const titlegit = document.getElementById("title-git");
+const newpass = document.getElementById("create-pass");
+const passmodal = document.getElementById("passmodal");
+const username = document.getElementById("username");
+const password = document.getElementById("password");
+const saveuser = document.getElementById("savepass");
+const itsaved = document.getElementById("itsaved");
+const nopass = document.getElementById("nopass");
+const passwordContainer = document.getElementById("savedpass");
+
+
+// ================================
+// GITHUB
+// ================================
+
+titlegit.addEventListener("click", () => {
+    window.open(
+        "https://github.com/harshilarora250/lockbox/",
+        "_blank"
+    );
+});
+
+
+// ================================
+// OPEN CREATE PASSWORD MODAL
+// ================================
+
+newpass.addEventListener("click", () => {
     passmodal.hidden = false;
-})
+});
+
+
+// ================================
+// SAVE PASSWORD
+// ================================
 
 saveuser.addEventListener("click", () => {
-    if (password.value === "") {
-        alert("please set a password")
-    } else {
-            const accounts = JSON.parse(localStorage.getItem("accounts")) || [];
 
-    accounts.push({
+    // Check password
+    if (password.value === "") {
+        alert("Please set a password");
+        return;
+    }
+
+    // Get existing accounts
+    const accounts =
+        JSON.parse(localStorage.getItem("accounts")) || [];
+
+    // Create new account
+    const account = {
         username: username.value,
         password: password.value,
-        createdAt: Date.now() // Unix timestamp
-    });
+        createdAt: Date.now()
+    };
 
-    localStorage.setItem("accounts", JSON.stringify(accounts));
+    // Add account
+    accounts.push(account);
 
-    console.log("Saved!");
+    // Save to localStorage
+    localStorage.setItem(
+        "accounts",
+        JSON.stringify(accounts)
+    );
+
+    console.log("Saved account:", account);
+    console.log("All accounts:", accounts);
+
+    // Show saving message
     itsaved.hidden = false;
-    passmodal.hidden = true;
-    setTimeout(() => {
-        itsaved.hidden = true;
-        location.reload();
-    }, 5000);
-}
-});
-// Create password
-const accounts = JSON.parse(localStorage.getItem("accounts")) || [];
 
+    // Hide modal
+    passmodal.hidden = true;
+
+    // Clear inputs
+    username.value = "";
+    password.value = "";
+
+    // Reload
+    setTimeout(() => {
+        location.reload();
+    }, 1000);
+});
+
+
+// ================================
+// DISPLAY SAVED PASSWORDS
+// ================================
+
+const accounts =
+    JSON.parse(localStorage.getItem("accounts")) || [];
+
+console.log("Accounts from localStorage:", accounts);
+
+
+// No passwords
 if (accounts.length === 0) {
-    nopass.textContent = "You have 0 passwords saved";
-} else {
-    nopass.textContent = `You have ${accounts.length} passwords saved. They are:`;
+
+    nopass.textContent =
+        "You have 0 passwords saved.";
+
+}
+
+
+// There are passwords
+else {
+
+    nopass.textContent =
+        `You have ${accounts.length} password${accounts.length === 1 ? "" : "s"} saved.`;
 
     accounts.forEach((account) => {
-        const passwordCard = document.getElementById("savedpass")
 
-        passwordCard.classList.add("password-card")
+        // Create card
+        const passwordCard =
+            document.createElement("div");
 
+        passwordCard.classList.add("password-card");
+
+        // Put account information inside card
         passwordCard.innerHTML = `
-        <h3>${account.username}</h3>
-        <br>
-        <p>${account.password}</p>
-        <br>`
-    })
+            <h3>Username: ${account.username}</h3>
+            <p>Password: ${account.password}</p>
+            <p>Website: ${account.website}</p>
+        `;
+
+        // Add card to page
+        passwordContainer.appendChild(passwordCard);
+
+    });
 }
-// View saved password
-
-
-// View saved password
-
-// <ANIMATIONS-BEGIN-HERE>
-// <ANIMATIONS-END-HERE>

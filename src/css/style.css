@@ -10,20 +10,18 @@ body {
 .title {
     color: white;
     font-family: "Bitcount Prop Single", system-ui;
-  font-optical-sizing: auto;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0.5,
-    "ELSH" 0,
-    "ELXP" 0;
+    font-optical-sizing: auto;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
     text-align: center;
     font-size: 35px;
 }
 
 hr {
-    align-items: center;
     width: 250px;
-    margin-top: auto;
 }
 
 .newpass {
@@ -33,72 +31,88 @@ hr {
     margin-top: auto;
     border-radius: 50px;
     font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin-left: 50px;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 50px;
 }
 
 .passmodal {
-    /* Your exact styles */
-  background-color: #F55F44;
-  border-radius: 15px;
-  padding: 30px;
-  width: 90%;
-  max-width: 450px;
-  box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.2);
+    background-color: #F55F44;
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.2);
 
-  /* The centering magic */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
 }
 
 .passtitle {
     font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  font-family: 35px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
 }
 
-.login-input{
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
+.login-input {
+    display: block;
+    margin: auto;
 }
 
 .savepass {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
+    display: block;
+    margin: auto;
+    font-size: 25px;
 }
 
 .input-what {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
+    text-align: center;
 }
 
 .saved {
-  text-align: center;
-  color: green;
+    text-align: center;
+    color: green;
 }
 
+
+/* ========================= */
+/* PASSWORD CONTAINER */
+/* ========================= */
+
 .passwords {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  background-color: #993CCF;
-  border-radius: 15px;
-  padding: 30px;
-  width: 90%;
-  max-width: 450px;
-  box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+    background-color: #993CCF;
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ========================= */
+/* INDIVIDUAL PASSWORD CARD */
+/* ========================= */
+
+.password-card {
+    background-color: #383636;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.password-card h3 {
+    color: white;
+    margin: 0 0 10px 0;
+}
+
+.password-card p {
+    color: white;
+    margin: 0;
 }
