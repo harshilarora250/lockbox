@@ -10,13 +10,46 @@ body {
 .title {
     color: white;
     font-family: "Bitcount Prop Single", system-ui;
-  font-optical-sizing: auto;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0.5,
-    "ELSH" 0,
-    "ELXP" 0;
+    font-optical-sizing: auto;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
+
     text-align: left;
     margin-left: 25px;
     font-size: 35px;
+    margin-top: 50px;
+}
+
+.github {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+    margin-top: -50px;
+    font-size: 50px;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.divider {
+    margin-top: 25px;
+}
+
+.github,
+.github:visited,
+.github:hover,
+.github:active {
+    color: white;
+}
+
+.gotoapp{
+        display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+    margin-top: -50px;
+    font-size: 25px;
+    width: fit-content;
+    margin-left: auto;
 }
