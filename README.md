@@ -1,6 +1,9 @@
 # LockBox
 LockBox is a web password manager, save passwords. Play a fun little embedded mystery game! (that I did not make btw)
 
+<img src="assets/app.png" align="center">
+<br>
+
 ## File Structure
 <img src="assets/filestructure.png" height="250px">
 
