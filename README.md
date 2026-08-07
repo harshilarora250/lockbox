@@ -4,6 +4,9 @@ LockBox is a web password manager, save passwords. Play a fun little embedded my
 ## File Structure
 <img src="assets/filestructure.png" align="right" height="200px">
 
+
+
+--------------------------------------------------
 ## Forking
 ```
 git clone https://github.com/harshilarora250/lockbox/
