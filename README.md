@@ -3,7 +3,7 @@ LockBox is a web password manager, save passwords. Play a fun little embedded my
 
 ## File Structure
 Here's the file structure:
-<img src="assets/filestructure.png">
+<img src="assets/filestructure.png" height="50px">
 
 ## Forking
 ```
