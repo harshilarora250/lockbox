@@ -1,7 +1,15 @@
 # LockBox
 LockBox is a web password manager, save passwords. Play a fun little embedded mystery game! (that I did not make btw)
 
+## File Structure
 
+## Forking
+```
+git clone https://github.com/harshilarora250/lockbox/
+cd lockbox
+npm install
+npm run dev
+```
 
 ## Tech Stack
 ```

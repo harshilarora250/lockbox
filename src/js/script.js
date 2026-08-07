@@ -49,6 +49,18 @@ if (accounts.length === 0) {
     nopass.textContent = "You have 0 passwords saved";
 } else {
     nopass.textContent = `You have ${accounts.length} passwords saved. They are:`;
+
+    accounts.forEach((account) => {
+        const passwordCard = document.getElementById("savedpass")
+
+        passwordCard.classList.add("password-card")
+
+        passwordCard.innerHTML = `
+        <h3>${account.username}</h3>
+        <br>
+        <p>${account.password}</p>
+        <br>`
+    })
 }
 // View saved password
 
