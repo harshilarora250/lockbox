@@ -7,8 +7,6 @@ LockBox is a web password manager, save passwords. Play a fun little embedded my
 
 
 --------------------------------------------------
-<br>
-<br>
 
 ## Forking
 ```
