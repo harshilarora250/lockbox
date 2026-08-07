@@ -128,7 +128,7 @@ else {
         passwordCard.innerHTML = `
             <h3>Username: ${account.username}</h3>
             <p>Password: ${account.password}</p>
-            <p>Website: ${account.website}</p>
+            <p>Website: <a href="${account.website}" target="_blank" color="white">${account.website}</a> </p>
         `;
 
         // Add card to page
