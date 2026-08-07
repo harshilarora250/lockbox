@@ -14,6 +14,7 @@ const saveuser = document.getElementById("savepass");
 const itsaved = document.getElementById("itsaved");
 const nopass = document.getElementById("nopass");
 const passwordContainer = document.getElementById("savedpass");
+const website = document.getElementById("website");
 
 
 // ================================
@@ -57,6 +58,7 @@ saveuser.addEventListener("click", () => {
     const account = {
         username: username.value,
         password: password.value,
+        website: website.value,
         createdAt: Date.now()
     };
 
