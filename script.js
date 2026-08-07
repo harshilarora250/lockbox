@@ -6,6 +6,7 @@ const username = document.getElementById("username")
 const password = document.getElementById("password")
 const saveuser = document.getElementById("savepass")
 const itsaved = document.getElementById("itsaved")
+const nopass = document.getElementById("nopass")
 
 //Lead title text to github repo
 titlegit.addEventListener("click", (e) => {
@@ -42,7 +43,13 @@ saveuser.addEventListener("click", () => {
 }
 });
 // Create password
+const accounts = JSON.parse(localStorage.getItem("accounts")) || [];
 
+if (accounts.length === 0) {
+    nopass.textContent = "You have 0 passwords saved";
+} else {
+    nopass.textContent = `You have ${accounts.length} passwords saved. They are:`;
+}
 // View saved password
 
 
