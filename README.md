@@ -4,6 +4,11 @@ LockBox is a web password manager, save passwords. Play a fun little embedded my
 <img src="assets/app.png" align="center">
 <br>
 
+## How to use
+The project is pretty self explanitory, if you can't understand for some reason you can watch the demo video
+
+<a href="demo/demo.mov">
+
 ## File Structure
 <img src="assets/filestructure.png" height="250px">
 
