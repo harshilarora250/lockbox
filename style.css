@@ -89,3 +89,16 @@ hr {
   text-align: center;
   color: green;
 }
+
+.passwords {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #993CCF;
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.2);
+}

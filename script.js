@@ -41,10 +41,7 @@ saveuser.addEventListener("click", () => {
     }, 5000);
 }
 });
-
 // Create password
-
-
 
 // <ANIMATIONS-BEGIN-HERE>
 // <ANIMATIONS-END-HERE>
